@@ -13,7 +13,7 @@
 	            
                 <div class="col-md-3 col-sm-6">
                     <a target="_blank" href="{{featured.url}}">
-                        <img src="{{featured.image.getImage()}}" class="img-responsive img-centered" alt="{{featured.name}}">
+                        <img src="{{featured.image.getImage()}}" class="img-responsive img-centered" alt="{{featured.logo_name}}">
                     </a>
                 </div>
                 {{end-each}}
