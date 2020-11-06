@@ -219,7 +219,7 @@
 	</pageset>	
     
     
-    <templateset name="generic-page" name_friendly="Generic Page" view="generic_page">
+    <templateset name="generic_page" name_friendly="Generic Page" view="generic_page">
 		<fields>
 			<text name="title" name_friendly="Page Title (h1)" required="1" />
 			<wysiwyg_advanced name="content" name_friendly="Page Content" />
@@ -241,7 +241,7 @@
 	</templateset>
 	
 	
-	    <templateset name="social-spotlight" name_friendly="Social Spotlight Page" view="social-spotlight-page">
+	    <templateset name="social_spotlight" name_friendly="Social Spotlight Page" view="social-spotlight-page">
 		<fields>
 			<text name="title" name_friendly="Page Title (h1)" required="1" />
 			<wysiwyg_advanced name="content" name_friendly="Page Content" />
