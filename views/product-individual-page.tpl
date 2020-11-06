@@ -5,7 +5,7 @@
 	   
 		<div class="product" itemscope="" itemtype="http://schema.org/Product">
 			<a href="{{product.where_to_buy_link}}" class="btn btn-primary pull-right"><span class="fa fa-shopping-cart"></span> Buy Now</a>
-			<h1 itemprop="name">{{page.name}}</h1>
+			<h1 itemprop="name">{{page.product_name}}</h1>
 					
 			<div class="row">
 				<div class="col-md-6">
