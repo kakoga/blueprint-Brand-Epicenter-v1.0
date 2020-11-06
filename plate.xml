@@ -64,7 +64,7 @@
     
     <pageset name="products" name_friendly="Individual Products" parent_item="our-products"  view="product-individual-page">
 	    <fields>
-		    <text name="name" name_friendly="Name" list="1"/>
+		    <text name="product_name" name_friendly="Name" list="1"/>
 		    <wysiwyg_basic name="description" name_friendly="Description"/>
 		    <wysiwyg_basic name="specs" name_friendly="Specs (optional)"/>
 		    <images name="main_image" name_friendly="Main Image" list="1"/>
@@ -73,7 +73,7 @@
 		</fields>
 		<items>
 			<item link_title="Product Example" path_part="product-example" parent="our-products">
-				<name>Product</name>
+				<product_name>Product</product_name>
 				<description><![CDATA[Product Placeholder Content]]></description>
 				<specs><![CDATA[Product Placeholder Specs]]></specs>
 				<main_image><![CDATA[https://upload.wikimedia.org/wikipedia/commons/9/91/IPod_Nano_4G_black.jpg]]></main_image>
@@ -87,28 +87,28 @@
     
      <dataset name="social_links" name_friendly="Social Links">
       <fields>
-        <text name="name" name_friendly="Social Media Name" required="1" list="1" />
+        <text name="social_name" name_friendly="Social Media Name" required="1" list="1" />
         <text name="font_awesome_icon" name_friendly="Font Awesome Icon Name" list="1" required="1" />
         <text name="url" name_friendly="Social Media Link" limit="1" list="1" />        
       </fields>
       <items>
         <item>
-          <name><![CDATA[Facebook]]></name>
+          <social_name><![CDATA[Facebook]]></social_name>
           <font_awesome_icon><![CDATA[facebook]]></font_awesome_icon> 
           <url><![CDATA[https://www.facebook.com]]></url>
         </item>
         <item>
-          <name><![CDATA[Twitter]]></name>
+          <social_name><![CDATA[Twitter]]></social_name>
           <font_awesome_icon><![CDATA[twitter]]></font_awesome_icon> 
           <url><![CDATA[https://www.twitter.com]]></url>
         </item>
         <item>
-          <name><![CDATA[Instagram]]></name>
+          <social_name><![CDATA[Instagram]]></social_name>
           <font_awesome_icon><![CDATA[instagram]]></font_awesome_icon> 
           <url><![CDATA[https://www.instagram.com]]></url>
         </item>
         <item>
-          <name><![CDATA[Pinterest]]></name>
+          <social_name><![CDATA[Pinterest]]></social_name>
           <font_awesome_icon><![CDATA[pinterest]]></font_awesome_icon> 
           <url><![CDATA[https://www.pinterest.com]]></url>
         </item>
@@ -147,28 +147,28 @@
 
     <dataset name="featured_in" name_friendly="Featured In Logos">
       <fields>
-        <text name="name" name_friendly="Name of Feature Logo" required="1" list="1" />
+        <text name="logo_name" name_friendly="Name of Feature Logo" required="1" list="1" />
 		<images name="image" name_friendly="Logo" limit="1" />
         <text name="url" name_friendly="Link (optional)" limit="1" list="1" />        
       </fields>
       <items>
         <item>
-          <name><![CDATA[NBC]]></name>
+          <logo_name><![CDATA[NBC]]></logo_name>
           <image><![CDATA[http://www.perfectduluthday.com/wp-content/uploads/2016/08/NBC.jpg]]></image>
           <url><![CDATA[https://www.nbc.com]]></url> 
         </item>
         <item>
-          <name><![CDATA[Amazon]]></name>
+          <logo_name><![CDATA[Amazon]]></logo_name>
           <image><![CDATA[http://static1.businessinsider.com/image/539f3ffbecad044276726c01-960/amazon-com-logo.jpg]]></image>
           <url><![CDATA[https://www.amazon.com]]></url> 
         </item>
         <item>
-          <name><![CDATA[Walmart]]></name>
+          <logo_name><![CDATA[Walmart]]></logo_name>
           <image><![CDATA[https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/New_Walmart_Logo.svg/2000px-New_Walmart_Logo.svg.png]]></image>
           <url><![CDATA[https://www.walmart.com]]></url> 
         </item>     
         <item>
-          <name><![CDATA[CrunchBase]]></name>
+          <logo_name><![CDATA[CrunchBase]]></logo_name>
           <image><![CDATA[https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/CrunchBase.svg/1280px-CrunchBase.svg.png]]></image>
           <url><![CDATA[https://www.crunchbase.com]]></url> 
         </item>                        
@@ -193,20 +193,20 @@
 		
 	<pageset name="people" name_friendly="Individual Influencers" parent_item="influencers" view="influencer-page">
 		<fields>
-			<text name="name" name_friendly="Name" required="1" list="1"  />
+			<text name="influencer_name" name_friendly="Name" required="1" list="1"  />
 			<text name="title" name_friendly="Title" list="1" />
 			<images name="image" name_friendly="Image" list="1" limit="1" />
 			<wysiwyg_advanced name="description" name_friendly="Description" />
 			<wysiwyg_advanced name="quote" name_friendly="Highlighted Quote" />
 			<text name="location" name_friendly="Location" />
 			<sort name="sort" name_friendly="Sort Order" list="1" />
-			<one_to_one name="favorite_product" name_friendly="Favorite Product" relationship="products" relationship_field="name" list="1" />
+			<one_to_one name="favorite_product" name_friendly="Favorite Product" relationship="products" relationship_field="product_name" list="1" />
 
 		</fields>
 					
 		<items>
 			<item link_title="John Lennon" path_part="john-lennon" parent="influencers">
-				<name><![CDATA[John Lennon]]></name>
+				<influencer_name><![CDATA[John Lennon]]></influencer_name>
 				<title><![CDATA[Bassist, Writer]]></title>
 				<image><![CDATA[https://raw.githubusercontent.com/ardeay/blueprint-Brand-Epicenter-v1.0/master/media/john-lennon.jpg]]></image>
 				<description><![CDATA[<p>John Winston Ono Lennon, MBE was an English musician, singer and songwriter who rose to worldwide fame as a founder member of the Beatles, one of the most commercially successful and critically acclaimed acts in the history of popular music.</p>]]></description>
