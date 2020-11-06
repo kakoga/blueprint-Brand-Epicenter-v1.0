@@ -10,11 +10,11 @@
             </div>
 	    <div class="row">
 		    
-			{{each social_feed as social order by order by z.sort}}
+			(**{{each social_feed as social order by order by z.sort}}
 			
 			{{include social-loop}}
 			
-			{{end-each}}
+			{{end-each}} **)
         </div>
 	    
     </div>
