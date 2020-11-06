@@ -113,9 +113,9 @@
 				<div class="col-sm-4">
                     <div class="team-member">
 						<a href="{{person.getUrl()}}">
-						<img src="{{person.image.getImage(500,500,crop)}}" class="img-responsive img-circle" alt="{{person.name}} image">
+						<img src="{{person.image.getImage(500,500,crop)}}" class="img-responsive img-circle" alt="{{person.influencer_name}} image">
 						</a>
-						<h4><a href="{{person.getUrl()}}">{{person.name}}</a></h4>
+						<h4><a href="{{person.getUrl()}}">{{person.influencer_name}}</a></h4>
 						<p class="text-muted">{{person.title}}</p>
                         (**<ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
