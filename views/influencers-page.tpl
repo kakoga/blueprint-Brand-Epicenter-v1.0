@@ -22,10 +22,10 @@
 			                                <i class="fa fa-plus fa-3x"></i>
 			                            </div>
 			                        </div>
-									<img itemprop="image" src="{{person.image.getImage(600,600,crop)}}" class="img-responsive" alt="{{person.name}}, {{person.title}} ">
+									<img itemprop="image" src="{{person.image.getImage(600,600,crop)}}" class="img-responsive" alt="{{person.influencer_name}}, {{person.title}} ">
 			                    </a>
 			                    <div class="portfolio-caption">
-									<h4  itemprop="jobTitle"><a href="{{person.getUrl()}}">{{person.name}}</a>, {{influencer.title}} </h4>
+									<h4  itemprop="jobTitle"><a href="{{person.getUrl()}}">{{person.influencer_name}}</a>, {{influencer.title}} </h4>
 			                        
 			                    </div>
 			                </div>
